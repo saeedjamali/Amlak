@@ -2,10 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "koodak";
+  src: url("/fonts/KoodakBold.eot?#") format("eot"),
+    url("/fonts/KoodakBold.ttf") format("truetype"),
+    url("/fonts/KoodakBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "yekan";
+  src: url("/fonts/Yekan.eot?#") format("eot"),
+    url("/fonts/Yekan.ttf") format("truetype"),
+    url("/fonts/Yekan.woff") format("woff");
+}
+
+@font-face {
+  font-family: "nazanin";
+  src: url("/fonts/Nazanin.eot") format("eot"),
+    url("/fonts/Nazanin.ttf") format("truetype"),
+    url("/fonts/Nazanin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "gandom";
+  src: url("/fonts/Gandom.eot") format("eot"),
+    url("/fonts/Gandom.ttf") format("truetype"),
+    url("/fonts/Gandom.woff") format("woff");
+}
+
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-default);
+  background-color: var(--color-white);
+  min-height: 100vh;
+  max-width: 100%;
+  direction: rtl;
+}
+
+:root {
+  /* COLORS */
+  --color-white: #fff;
+  --color-primary: #c69963;
+  --color-primary-dark: #b28451;
+
+  --color-secondry: #101d2c;
+  --color-secondry-light: #101d2cef;
+
+  --color-gray-light-1: #f9f7f6;
+  --color-gray-light-2: #aaa;
+
+  --color-gray-dark-1: #54483a;
+  --color-gray-dark-2: #6d5d4b;
+
+  /* FONTS  */
+
+  --font-primary: "gandom", "koodak";
+  --font-secondry: "nazanin", "yekan";
+  --font-size-default: 16px;
+}
+
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  /* COLORS */
+  --color-white: #fff;
+  --color-primary: #c69963;
+  --color-primary-dark: #b28451;
+
+  --color-secondry: #101d2c;
+  --color-secondry-light: #101d2cef;
+
+  --color-gray-light-1: #f9f7f6;
+  --color-gray-light-2: #aaa;
+
+  --color-gray-dark-1: #54483a;
+  --color-gray-dark-2: #6d5d4b;
+
+  /* FONTS  */
+
+  --font-primary: "gandom", "koodak";
+  --font-secondry: "nazanin", "yekan";
+  --font-size-default: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,15 +102,7 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+
 
 @layer utilities {
   .text-balance {
