@@ -1,4 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project Tailwind with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+This project Includes concept : 
+1-Page Routung in next 
+2-Dynamic Pages
+3- Search and Filter 
+
+
 
 ## Getting Started
 
